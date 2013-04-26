@@ -1,0 +1,39 @@
+/* 
+    Document   : ie
+    Created on : 18-Apr-2013, 1:45:56 PM
+    Author     : Wilson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#contentWrapper {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);   /* IE6 & 7 */
+    zoom: 1;
+}
+
+.tabrow {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B266AEEA,endColorstr=#B266AEEA)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B266AEEA,endColorstr=#B266AEEA);   /* IE6 & 7 */
+    zoom: 1;
+}
+.tabrow li {
+    background: transparent;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#13366a', EndColorStr='#66aeea')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#13366a', EndColorStr='#66aeea'); /* IE6 & 7 */
+    zoom: 1;
+}
+.tabrow li.selected {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aeea', EndColorStr='#13366a')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aeea', EndColorStr='#13366a'); /* IE6 & 7 */
+    zoom: 1
+}
+
+#product.dropdown {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aeea', EndColorStr='#13366a')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aeea', EndColorStr='#13366a'); /* IE6 & 7 */
+    margin-left: 28.5%;
+}

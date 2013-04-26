@@ -1,0 +1,123 @@
+<script id="contactScript">
+    $(function(){
+    $("#contactForm input").keyup(function() {
+    if ($(this).val().length !== 0) {
+        $(this).next().fadeOut(400);
+    }
+     });
+    $("#contactForm textarea").keyup(function() {
+    if ($(this).val().length !== 0) {
+        $("#requestError").fadeOut(400);
+    }
+    });
+    $("#contactForm").submit(function(event) {
+        event.preventDefault();
+        var $form = $(this);
+        var inputs = $form.find("input");
+        var request = $form.find("textarea");
+        var isReady = true;
+        var posting;
+        var url = $form.attr("action");
+        inputs.each(function() {
+            if ($(this).val().length === 0) {
+                $(this).next().show(400);
+                if (isReady)
+                    isReady = false;
+             }
+        });
+        if (request.val().length === 0) {
+            $("#requestError").show(400);
+            if (isReady)
+                isReady = false;
+        }
+
+        if (isReady) {
+            posting = $.post(url,$form.serialize());
+            $("html").css("cursor", "wait");
+            $("#message").empty().append("Sending request, please wait...");
+            try {
+                posting.done(function(data){
+                    if ($(data).attr("id") === "success") {
+                        $("#message").css("color", "green");
+                    } else {
+                        $("#message").css("color", "red");
+                    }
+                    $("#message").empty().append($(data).html());
+                    $("html").css("cursor", "");
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    });
+});
+</script>
+<div id="contactPage">
+    <table id="contactInfo_full" border="0">
+        <tr>
+            <td><img src="images/site/ca.jpg"/></td>
+            <td>
+                <p>CANADA - HEAD OFFICE</p>
+                <p>
+                    Tel: 01 (587) 985 - 3758<br/>
+                    Address: 239-11505 Ellerslie Road. Edmonton, AB. T6W 2A9.<br/>
+                    <a href="mailto:avaldes@viamachinery.com?subject=Request_From_Website">Email: avaldes@viamachinery.com</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/site/us.jpg"/></td>
+            <td>
+                <p>USA OFFICE</p>
+                <p>
+                    <br/>
+                    <br/>
+                    <a href="mailto:jandres@viamachinery.com?subject=Request_From_Website">Email: jandres@viamachinery.com</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/site/mc.jpg"/></td>
+            <td>
+                <p>MEXICO OFFICE</p>
+                <p>
+                    <br/>
+                    <br/>
+                    <a href="mailto:jcarrillo@viamachinery.com?subject=Request_From_Website">Email: jcarrillo@hotmail.com</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <div id="vBar"></div>
+    <form action="email.php" id="contactForm">
+        <font size="5">CONTACT US</font><br>
+        <span id="message"></span>
+        <table border="0">
+            <tr>
+                <td><label for="name"><span class="mustFill">*</span>Name</label></td>
+                <td><input id="name" name="name" type="text"><span class="error">required</span></td>
+            </tr>
+            <tr>
+                <td><label for="company"><span class="mustFill">*</span>Company</label></td>
+                <td><input id="company" name="company" type="text"><span class="error">required</span></td>
+            </tr>
+            <tr>
+                <td><label for="phone"><span class="mustFill">*</span>Phone No.</label></td>
+                <td><input id="phone" name="phone" type="text"><span class="error">required</span></td>
+            </tr>
+            <tr>
+                <td><label for="address"><span class="mustFill">*</span>Address</label></td>
+                <td><input id="address" name="address" type="text"><span class="error">required</span></td>
+            </tr>
+            <tr>
+                <td><label for="request"><span class="mustFill">*</span>Request</label><br/><span class="error" id="requestError">required</span></td>
+                <td><textarea id="request" name="request" rows="10" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="submitButton" type="submit" value="Submit"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="clear"></div>

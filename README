@@ -1,0 +1,3 @@
+www.viamachinery.com is a website I built simply displays information about a machinery factory. Instead of using conventional page by page loading I decided to use dynamic loading with the support of jQuery.
+
+To make the website appear to be more like a whole system I used fade-in and fade-out effect when switch between pages. Also CSS3 transformation and transistion effects are used to enhance user experience and usability.

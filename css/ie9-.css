@@ -1,0 +1,20 @@
+/* 
+    Document   : ie9-
+    Created on : 24-Apr-2013, 12:16:30 AM
+    Author     : Wilson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.imageShow img:hover {
+    /* IE8+ - must be on one line, unfortunately */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.7, M12=0, M21=0, M22=1.7, SizingMethod='auto expand')";
+   
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+        M11=1.7,
+        M12=0,
+        M21=0,
+        M22=1.7,
+        SizingMethod='auto expand');
+}

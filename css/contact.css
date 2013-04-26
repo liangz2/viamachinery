@@ -1,0 +1,101 @@
+/* 
+    Document   : contact
+    Created on : 12-Apr-2013, 11:25:41 AM
+    Author     : Wilson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.mustFill {
+    margin-top: 10px;
+    margin-right: 4px;
+    color: red;
+}
+
+#contactPage a {
+    text-decoration: none;
+    color: #3aa0ff;
+    border-bottom: dotted 1px #AAA
+}
+
+#contactPage {
+    position: relative;
+    height: 450px;
+}
+
+#contactPage input,
+#contactPage textarea{
+    border-radius: 5px;
+    box-shadow: inset 0 25px 10px -10px rgba(150, 150, 150, 0.3);
+    border: 1px solid #AAA;
+}
+
+#submitButton {
+    width: 100px;
+    color: #777;
+    border-radius: 5px;
+    box-shadow: inset 0 25px 10px -10px rgba(255, 255, 255, 0.5);
+    border: 1px solid #aaa;
+}
+
+#submitButton:hover {
+    color: black;
+    box-shadow: inset 0 25px 10px -10px rgba(150, 150, 150, 0.2);
+}
+
+#contactInfo_full {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#contactInfo_full td {
+    padding-right: 20px;
+}
+
+#contactInfo_full tr {
+    height: 100px;
+}
+
+#contactForm {
+    margin-top: -20px;
+    width: 450px;
+    position: relative;
+    float: right;
+}
+
+#contactForm table {
+    margin-top: 40px;
+}
+
+#message {
+    position: absolute;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0,0,0,0.5);
+    font-size: 20px;
+    color: white;
+}
+
+#vBar {
+    position: relative;
+    content: "";
+    left: 50%;
+    top: 150px;
+    border: 10px;
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    clear: none;
+}
+
+#contactForm .error {
+    margin-left: 5px;
+    color: red;
+    font-weight: 800;
+    display: none;
+}

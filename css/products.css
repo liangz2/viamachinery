@@ -1,0 +1,99 @@
+/* 
+    Document   : product
+    Created on : 12-Apr-2013, 11:26:14 AM
+    Author     : Wilson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#RDP {
+    margin: 0 auto;
+}
+
+#RDP h2,h3,
+#CHP h2, h3 {
+    text-align: center;
+}
+
+#RDP table a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #3aa0ff;
+    border-bottom: dotted 1px #AAA
+}
+
+#RDP #nav,
+#CHP #nav {
+    float: left;
+    margin-top: -20px;
+}
+
+#RDP #nav {
+    margin-top: -40px;
+}
+.specs,
+.imageShow {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.specs .titleColumn {
+    text-align: left;
+}
+
+.specs .emptyTitle {
+    border: none;
+    box-shadow: none;
+}
+
+.specs td {
+    border: 1px solid #aaa;
+    padding: 0 5px 0 5px;
+    box-shadow: 2px 2px 1px 0 #222; 
+}
+#RDP #intro,
+#CHP #intro {
+    margin: 40px 40px 0 200px;
+}
+
+#RDP table,
+#CHP table {
+    margin-top: 40px;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+.specs .headerRow {
+    color: #222;
+    background: #ffff66
+}
+
+.imageShow img {
+    width:200px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:  all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.imageShow img:hover {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transform: scale(1.7);
+    box-shadow: 2px 2px 1px 0 #222; 
+}
+
+.imageShow td {
+    padding: 10px;
+    border: 1px solid #aaa;
+    background: white;
+}
+
+.imageShow {
+    box-shadow: 0 0 1px 0 #222; 
+}

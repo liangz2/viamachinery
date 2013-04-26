@@ -1,0 +1,166 @@
+/* 
+    Document   : main
+    Created on : 10-Apr-2013, 10:26:59 PM
+    Author     : Wilson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 5px 0 5px 0;
+}
+
+html {
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    background-attachment: fixed;
+    height: 100% !important;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background: url(../images/site/grey_striped.png) top;
+}
+
+a:hover {
+    cursor: pointer;
+}
+#mapPage a { 
+    text-decoration: none;
+    color: #3aa0ff;
+    border-bottom: dotted 1px #AAA
+}
+
+.wrapper {
+    color: white;
+    margin: 0 auto;
+    width: 1024px;
+    overflow: hidden;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+}
+
+#headerWrapper {
+    height: 170px;
+}
+
+#contentWrapper {
+    position: relative;
+    min-height: calc(100% - 270px);
+    height: calc(100% - 270px);
+    height: auto !important;
+    border-bottom: 1px solid #AAA;
+    box-shadow: 6px 0 4px -4px #888 , -6px 0 4px -4px #888; 
+    background-color: rgba(0,0,0,0.7);
+}
+
+#content {
+    position: relative;
+    color: white;
+    padding-top: 10px;
+    height: 100%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    z-index: 3;
+}
+
+#logo {
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+    height: 131px;
+    background: url(../images/site/logo.png) no-repeat top;
+}
+
+#header {
+    position: relative;
+    background: url(../images/site/darkGrid.jpg) top;
+    min-width: 1024px;
+}
+
+#contactInfo {
+    font-size: 12px;
+    position: relative;
+    margin-top: 110px;
+    float: right;
+    color: white;
+}
+
+#contactInfo a,
+#footer a {
+    text-decoration: none;
+    color: #3aa0ff;
+    border-bottom: dotted 1px #AAA
+}
+
+#contactInfo tr {
+    height: 40px;
+}
+
+#contactInfo td {
+    padding-right: 5px;
+}
+
+#contactInfo img {
+    margin-top: 5px;
+    width: 45px;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    min-width: 1024px;
+    background: url(../images/site/darkGrid.jpg) top;
+    clear: both;
+    z-index: 1;
+}
+#info {
+    font-size: 13px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+#footer img {
+    float: right; 
+    margin: 15px 10px 0 0;
+    width: 150px;
+}
+#clear {
+    clear: both;
+}
+
+#ad {
+    font-size: 12px;
+    float: left;
+    color: red;
+    padding-top: 15px;
+    margin-left: 340px;
+}
+
+.docs {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 20px;
+    background: #13366a;
+    padding: 10px 0 10px 0;
+    width: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: -1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.docs:hover,
+.docs.selected {
+    background: #27527f;
+    box-shadow: 0 0 3px rgba(0,0,0,0.7) inset;
+}

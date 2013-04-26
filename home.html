@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<div id="homePage">
+    <script type="text/javascript">
+        $(function() {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: true,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 150,
+                itemMargin: 5,
+                smoothHeight: true,
+                asNavFor: '#slider'
+            });
+
+            $('#slider').flexslider({
+                animation: "slide",
+                controlNav: true,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel"
+            });
+        });
+    </script>
+    <div id="nav">
+        <li class="docs" onclick="openPDFWin('Brochure');"><a>Brochure</a></li>
+        <li class="docs" onclick="$('#productTab').click();"><a>Radial Drill Press</a></li>
+        <li class="docs" onclick="$('.tabrow li').removeClass('selected'); $('#productTab').addClass('selected'); loadPage('CHP.html');"><a>C-Frame Hydraulic Press</a></li>
+    </div>
+    <div id="intro">
+        <p>
+            VIA MACHINERY is a Canadian company located in the South of Edmonton, capital of Alberta – a beautiful province known for its fast growing oil industry.
+        </p>
+        <p>
+            Our company specializes in heavy machinery for a variety of industrial uses such as the oil field industry, the machining industry, construction, etc.
+        </p>
+        <p>
+            This machinery includes:
+        </p>
+        <ul>
+            <li><a onclick="$('#productTab').click();">Radial Drill Presses</a></li>
+            <li><a onclick="$('.tabrow li').removeClass('selected'); $('#productTab').addClass('selected'); loadPage('CHP.html');">C-Frame Hydraulic Presses</a></li>
+        </ul>
+        <p>
+            Our products are being updated constantly to meet our clients’ expectations, always with the best quality and reliability. 
+        </p>
+        <p>
+            We aim to take share in the market with integrity and achieve a sustainable development to allow our clients get a high return in their investments.
+        </p>
+        <p>
+            With our manufacturing facility in China, we can ship worldwide.
+        </p>
+        <p style="font-size: 20px;">
+            NOW IN 3 DIFFERENT LOCATIONS TO SERVE YOU BETTER!!!
+        </p>
+    </div>
+    <div id="clear"></div>
+    <div id="slider" class="flexslider">
+      <ul class="slides">
+        <li>
+            <img src="images/intro_small/Image1.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image2.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image3.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image4.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image5.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image6.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image7.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image8.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image9.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image10.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image11.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image12.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image13.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image14.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image15.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image16.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image17.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image18.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image19.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image20.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image21.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image22.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image23.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image24.jpg" />
+        </li>
+      </ul>
+    </div>
+    <div id="carousel" class="flexslider">
+      <ul class="slides">
+        <li>
+            <img src="images/intro_small/Image1.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image2.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image3.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image4.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image5.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image6.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image7.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image8.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image9.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image10.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image11.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image12.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image13.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image14.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image15.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image16.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image17.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image18.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image19.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image20.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image21.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image22.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image23.jpg" />
+        </li>
+        <li>
+            <img src="images/intro_small/Image24.jpg" />
+        </li>
+      </ul>
+    </div>
+    <div id="clear"></div>
+</div>
